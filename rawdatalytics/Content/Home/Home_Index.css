@@ -1,0 +1,20 @@
+﻿body {
+    justify-content:space-between;
+}
+
+.main_heading {
+    text-align: center;
+    align-content: center;
+    
+}
+
+#ds_intro_whole {
+    max-width:60%;
+    
+}
+#content {
+    font-size: 16px;
+}
+h4{
+    
+}

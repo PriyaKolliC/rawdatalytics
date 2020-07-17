@@ -9,9 +9,10 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div id="header">
+    <!--<div id="header">
     <p>Data Science Guide</p>
     </div>
+    -->
     <div class="navbar navbar-inverse navbar-center" id="nav1">
         <div class="container">
             <div class="navbar-header">
@@ -25,7 +26,8 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav" id="navbar-menu-items">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    
+                    <li>@Html.ActionLink("Articles", "Index", "Articles")</li>
+
                 </ul>
                 <ul class="nav navbar-nav navbar-right" id="navbar-menu-items">
                     <li>@Html.ActionLink("About", "About", "Home")</li>
@@ -34,9 +36,10 @@
             </div>
         </div>
     </div>
+    @RenderBody()
     <div class="container body-content">
-        @RenderBody()
-        
+
+
         <footer class="navbar-fixed-bottom">
             <hr />
             <p>&copy; @DateTime.Now.Year - Rawdatalytics</p>

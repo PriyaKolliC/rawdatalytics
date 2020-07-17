@@ -1,5 +1,52 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="@Url.Content("~/Content/Home/Home_Index.css")" rel="stylesheet" type="text/css">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <h3 class="main_heading">Introduction to Data Science</h3>
 
-<div class="jumbotron">This blog is all about data science</div>
+    <div class="container" id="ds_intro_whole">
+        <div class="first">
+            <h4>What is Data Science?</h4>
+            <p id="content">
+                There are many ways and views to defining data science. In simple words, data science is an art of
+                uncovering insights from the data using different scientific methods, tools or algorithms.
+            </p>
+        </div>
+
+        <div class="second">
+            <h4>When was the term coined?</h4>
+            <p id="content">
+                In 2012 Harvard Business Review called "Data Science" as the sexiest job of 21st century. 
+                However, the term data science was in existence way before one could ever imagine. 
+                It was throughout the 2000s that various sources started recognizing the importance of data science.
+                It was data everywhere and companies felt the need to study this data to discover some insights that could help in every way it can.
+                Over the past decade data science has continued to evolve and will conitunue to evolve with the change of needs.
+            </p>
+        </div>
+
+        <div class="third">
+            <h4>To learn more about data science follow the links below:</h4>
+            <p id="content">
+
+                @*
+            @Html.ActionLink("What do the data scientists do?", "DataScientists", "Introduction")
+            <br>
+            @Html.ActionLink("Difference between Machine Learning, Artificial Intelligence, Deep Learning and Data Science.", "Difference_ML_AI", "Introduction")
+            <br>
+            @Html.ActionLink("Data Science Life Cycle", "Lifecycle", "Introduction")
+                *@
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
