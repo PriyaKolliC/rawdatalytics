@@ -1,13 +1,23 @@
 ﻿body {
+    justify-content: space-between;
+    
 }
 
 .main_heading {
     text-align: center;
     align-content: center;
-    text-decoration-color: aqua;
-    background-color: black;
+    
 }
 
 #ds_intro_whole {
-    background-color: blue;
+    max-width: 60%;
+    
+}
+
+#content {
+    font-size: 16px;
+    text-align: justify;
+}
+
+h4 {
 }
